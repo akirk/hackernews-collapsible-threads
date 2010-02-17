@@ -50,6 +50,9 @@ jQuery(function($) {
 		var thread = children.add(comment).add($("td", el).eq(1));;
 		if (visible) {
 			$e.text("[+] (" + children.length + " child" + (children.length == 1 ? "" : "ren") + ")");
+			thread.not(comment)
+				.find("span.collapse").text("[-]").end()
+				.find("span.comhead").parent().siblings().show();
 			thread.hide();
 			comment.closest("table").css("padding-bottom", "20px");
 		} else {
