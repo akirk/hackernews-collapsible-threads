@@ -47,12 +47,15 @@ jQuery(function($) {
 		var comment = el.find("span.comhead").parent().siblings();
 		var visible = children.is(":visible");
 		if (!children.length) visible = comment.is(":visible");
-		var thread = children.add(comment).add($("td", el).eq(1));;
+		var thread = children.add(comment).add(comment.closest("td").prev());
 		if (visible) {
 			$e.text("[+] (" + children.length + " child" + (children.length == 1 ? "" : "ren") + ")");
 			thread.not(comment)
 				.find("span.collapse").text("[-]").end()
-				.find("span.comhead").parent().siblings().show();
+				.find("span.comhead")
+					.parent()
+						.siblings().show().end()
+						.closest("td").prev().show();
 			thread.hide();
 			comment.closest("table").css("padding-bottom", "20px");
 		} else {
