@@ -1,0 +1,7 @@
+I enjoy consuming and participating at Hacker News by Y Combinator resp. Paul Graham.
+
+One thing that needs improvement is the reading comments there. At times it happens that the first comment develops into a huge thread, and then the second top-level comment (which might also be well worth reading) disappears somewhere down into the page.
+
+Reddit has combatted this common problem by making threads easily collapsible. I think it is worth having this also on Hacker News, so I implemented it and wrapped it into a bookmarklet so that you can use this functionality on-demand at Hacker News.
+
+See http://alexander.kirk.at/2010/02/16/collapsible-threads-for-hacker-news/ for how to install the bookmarklet.
