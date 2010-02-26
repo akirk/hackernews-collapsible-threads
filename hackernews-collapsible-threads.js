@@ -72,7 +72,9 @@ jQuery(function($) {
 		var level = $("td img[src*=s.gif]", this)[0].width / 40;
 		var comhead = $("span.comhead", this);
 		comhead.append(" ", $("<span class='collapse'>[-]</span>").css({cursor: "pointer"}).click(collapse).hover(function() { this.style.textDecoration = "underline"; }, function() { this.style.textDecoration = "none"; }));
-		var id = $("a[href*=item]", comhead)[0].href;
+		var id = $("a[href*=item]", comhead);
+		if (!id.length) return true;
+		id = id[0].href;
 		id = id.substr(id.indexOf("=") + 1);
 		$this.addClass("comment-" + id).data("comment", id);
 		parents[level] = id;
