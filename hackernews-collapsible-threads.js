@@ -25,7 +25,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  * 
  * URL for using the bookmarklet in a web browser
- * javascript:(function()%7Bvar%20s=document.createElement('script');s.type='text/javascript';s.src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js';document.documentElement.childNodes%5B0%5D.appendChild(s);s=document.createElement('script');s.type='text/javascript';s.src='http://alexander.kirk.at/js/hackernews-collapsible-threads.js';document.documentElement.childNodes%5B0%5D.appendChild(s);%7D)();
+ * javascript:(function()%7Bvar%20s=document.createElement('script');s.type='text/javascript';s.src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js';document.documentElement.childNodes%5B0%5D.appendChild(s);s=document.createElement('script');s.type='text/javascript';s.src='https://alexander.kirk.at/js/hackernews-collapsible-threads.js';document.documentElement.childNodes%5B0%5D.appendChild(s);%7D)();
  */
 
 jQuery(function($) {
